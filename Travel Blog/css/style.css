@@ -1,0 +1,199 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+#page {
+	width: 960px;
+	/* border: 1px solid black; */
+}
+
+header {
+	width: 100%;
+	/* border: 1px solid black; */
+	padding: 10px;
+}
+
+header h1 {
+	display: inline;
+	color: #F8CE75;
+	font-weight: 300;
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+header h2 {
+	display: inline;
+	padding: 20px;
+	color: #B0B6BB;
+	font-weight: 100;
+	font-size: 22px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline-block;
+	width: 16%;
+	background: #B0B6BB;
+	height: 60px;
+	text-align: center;
+	color: white;
+	font-weight: 200;
+	font-size: 20px;
+}
+
+li {
+	padding-top: 15px;
+}
+
+content {
+	display: inline-block;
+	float: left;
+	/* border: 1px solid black; */
+	width: 70%;
+	padding: 10px;
+}
+
+h3 {
+	color: #C7CBD0;
+	font-weight: 300;
+	font-size: 26px;
+	margin: 20px 0 0 0;
+}
+
+h4 {
+	color:;
+	font-weight: 300;
+	font-size: 28px;
+	margin: 5px 0 0 0;
+}
+
+aside {
+	display: inline-block;
+	float: left;
+	/* border: 1px solid black; */
+	width: 30%;
+}
+
+aside p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 1.4em;
+	margin-top: 10px;
+}
+
+h5 {
+	font-weight: bold;
+	color: #b1b6bb;
+	margin: 0;
+}
+
+.about {
+	margin-top: 70px;
+}
+
+.ad p {
+	font-family: Georgia;
+	font-style: bold;
+	background: #cccccc;
+	color: #969696;
+	font-size: 70px;
+	text-align: center;
+	margin: 20px;
+	height: 200px;
+	padding-top: 20px;
+}
+
+.links ul {
+	color: #969696;
+	list-style-type: normal;
+	padding-left: 30px;
+}
+
+.links ul li {
+	color: orange;
+	font-weight: 100;
+	font-size: 14px;
+	padding: 0;
+}
+
+.links ul li::before {
+	content: "• ";
+	color: #969696;
+}
+
+article {
+	/* border: 1px solid black; */
+	margin: 10px 40px 10px 10px;
+}
+
+article p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.4em;
+}
+
+article p::first-letter {
+    color: #c7cbd0;
+    font-size: 4.2em;
+    float: left;
+    margin-top: .25em;
+    padding: 0 .2em .2em 0;
+}
+
+article img {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.continue {
+	color: orange;
+	text-align: right;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+hr {
+	color: #c7cbd0;
+}
+
+footer {
+	/* border: 1px solid black; */
+	clear: both;
+}
+
+/*.clear {
+	clear: both;
+}
+*/
+footer ul li{
+	display: inline-block;
+	color: orange;
+	font-weight: 100;
+	font-size: 14px;
+}
+
+footer ul {
+	margin-left: 10px;
+}
+
+h6 {
+	margin: 0 0 10px 10px;
+	color: #c7cbd0;
+	font-weight: 100;
+	font-size: 14px;
+}
