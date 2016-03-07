@@ -188,6 +188,7 @@ content {
 	width: 100%;
 	top: 550px;
 	box-shadow: 0 -5px 3px -5px #333;
+	margin-top: 60px;
 }
 
 section {
@@ -256,7 +257,7 @@ section p {
 footer {
 	position: relative;
 	top: 0;
-	margin-top: 80px;
+	margin-top: 20px;
 	background: #3a3a3b;
 	color: white;
 	size: 20px;
