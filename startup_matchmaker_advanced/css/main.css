@@ -1,12 +1,267 @@
-font-family: 'Merriweather', serif;
+/*font-family: 'Merriweather', serif;
 font-family: 'Oswald', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
 
-h4 {
-	font-family: 'Source Sans Pro', sans-serif;
-	color: white;
+/* -----------------------------------*/
+/* GLOBAL
+/* -----------------------------------*/
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+
 }
 
 body {
-	background: black;
-	}
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+}
+
+
+/* -----------------------------------*/
+/* GENERAL
+/* -----------------------------------*/
+
+h1 {
+	display: inline-block;
+	font-family: 'Merriweather';
+	font-size: 30px;
+	font-weight: 400;
+	color: white;
+}
+
+h2 {
+	size: 20px;
+	font-family: 'Oswald';
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h3 {
+	size: 20px;
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+}
+
+h4 {
+	font-family: 'Merriweather';
+	font-size: 25px;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+}
+
+li {
+	display: inline-block;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+}
+
+/* -----------------------------------*/
+/* NAVIGATION
+/* -----------------------------------*/
+
+nav {
+	background: #3a3a3b;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 75px;
+	z-index: 1;
+	border-bottom: 5px #F9D735 solid;
+	box-shadow: 0px 1px 0px gray;
+}
+
+nav h1 {
+	float: left;
+	margin-left: 20px;
+	width: auto;
+}
+
+nav ul {
+	float: right;
+	size: 20px;
+}
+
+nav li {
+	display: inline-block;
+	padding-right: 40px;
+}
+
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* -----------------------------------*/
+/* HERO
+/* -----------------------------------*/
+
+.hero-image img {
+	margin: 0 auto;
+	width: 100%;
+	z-index: 0;
+	position: relative;
+	top: -50px;
+}
+
+header {
+	background: #D6E1DC;
+	height: 75px;
+	box-shadow: 0px 1px 1px gray;
+	position: absolute;
+	top: 75px;
+	width: 100%;
+}
+
+header h4 {
+	margin: 20px 0 0 0;
+	font-style: italic;
+}
+
+.hero-image-overlay {
+	clear: both;
+	position: absolute;
+	top: 200px;
+	right: 0;
+	margin-right: 40px;
+	width: 450px;
+	height: auto;
+	background: rgba(255, 255, 255, .8);
+	box-shadow: 0px 0px 4px 1px gray;
+	padding: 30px;
+}
+
+.hero-image-overlay h4 {
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+}
+
+
+.button-primary {
+	background: #ED4740;
+	height: 50px;
+	width: 100%;
+	opacity: 1;
+	border-radius: 5px;
+	border-bottom: #C73A34 solid 2px;
+}
+
+.button-primary a {
+	display: block;
+	color: white;
+	font-family: 'Oswald';
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+/* -----------------------------------*/
+/* CONTENT
+/* -----------------------------------*/
+
+content {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	top: 550px;
+	box-shadow: 0 -5px 3px -5px #333;
+}
+
+section {
+	display: inline-block;
+	width: 33.33333333%;
+	background: white;
+	float: left;
+	padding: 50px 30px 30px 30px;
+}
+
+section h4 {
+	text-align: left;
+	margin: 10px 0 0 0;
+	size: 25px;
+	font-family: 'Merriweather';
+	font-weight: 400;
+}
+
+section p {
+	font-family: 'Source Sans Pro';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 10px 0 30px 0;
+}
+
+.button-secondary {
+	background: #E1EBE6;
+	height: 50px;
+	width: 100%;
+	opacity: 1;
+	border-radius: 5px;
+	border-bottom: #B3BBB7 solid 2px;
+}
+
+.button-secondary a {
+	display: block;
+	color: black;
+	font-family: 'Oswald';
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+.vertical-line {
+	position: absolute;
+	display: inline-block;
+	background: #b3bbb7;
+	width: 1px;
+	height: 250px;
+	margin-top: 30px;
+
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* -----------------------------------*/
+/* FOOTER
+/* -----------------------------------*/
+
+footer {
+	position: relative;
+	top: 0;
+	margin-top: 80px;
+	background: #3a3a3b;
+	color: white;
+	size: 20px;
+	padding: 10px 10px 10px 30px;
+}
+
+
+
