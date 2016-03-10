@@ -1,0 +1,192 @@
+/*font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
+/* -----------------------------------*/
+/* GLOBAL
+/* -----------------------------------*/
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.page {
+	border: black solid 1px;
+	margin: auto;
+	padding: 5px;
+	width: 960px;
+	height: 100%;
+}
+
+.clearfix:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+
+/* -----------------------------------*/
+/* GENERAL
+/* -----------------------------------*/
+
+h1 {
+	font-size: 25px;
+	font-family: 'Merriweather', serif;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ED4740;
+}
+
+/* -----------------------------------*/
+/* NAVIGATION
+/* -----------------------------------*/
+
+nav {
+	background: #3A3A3B;
+	width: 100%;
+	border-bottom: solid #F9D735 5px;
+}
+
+	.Logo {
+		display: inline-block;
+		color: white;
+		font-size: 30px;
+		font-family: 'Merriweather', serif;
+		padding: 20px;
+	}
+
+	nav ul {
+		float: right;
+		margin: 0;
+		padding-right: 20px;
+	}
+
+	nav ul li {
+		display: inline-block;
+		color: white;
+		font-size: 20px;
+		padding: 25px 10px;
+	}
+
+	.Primary-nav {
+		font-family: 'Oswald', sans-serif;
+		text-transform: uppercase;
+		font-color: white;
+	}
+
+/* -----------------------------------*/
+/* HERO
+/* -----------------------------------*/
+
+header {
+	background: #D6E1DC;
+	width: 100%;
+	margin: 0;
+}
+
+	header h1 {
+		font-style: italic;
+		text-align: center;
+		margin: 0;
+		padding: 20px;
+	}
+
+/* -----------------------------------*/
+/* HERO
+/* -----------------------------------*/
+
+.Hero-box-wrapper {
+	border: solid black 1px;
+	position: relative;
+	height: 370px;
+	width: 100%;
+}
+
+	.Hero-box {
+		position: absolute;
+		right: 0;
+		margin: 50px;
+		padding: 20px;
+		width: 350px;
+		background: white;
+		opacity: .8;
+		box-shadow: 0px 0px 8px 1px #888888;
+	}
+
+	.Hero-box h1 {
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+
+	.Button-primary {
+		background: #ED4740;
+		font-family: 'Oswald', sans-serif;
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 10px;
+		border-radius: 5px;
+		border-bottom: solid 3px #C73A34;
+	}
+/* -----------------------------------*/
+/* CONTENT
+/* -----------------------------------*/
+
+section {
+	display: inline-block;
+	float: left;
+	width: 33.33333%;
+	padding: 10px 20px;
+	border-left: 1px solid #D8D8D8;
+	margin: 20px 0;
+}
+
+content section:first-child {
+	border-left: 0;
+}
+
+	.Button-secondary {
+		background: #D6E1DC;
+		font-family: 'Oswald', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 10px;
+		border-radius: 5px;
+		border-bottom: solid 3px #B8BFBC;
+	}
+
+/* -----------------------------------*/
+/* FOOTER
+/* -----------------------------------*/
+
+footer {
+	width: 100%;
+	background: #3A3A3B;
+}
+
+footer p {
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	margin: 0;
+}
+
