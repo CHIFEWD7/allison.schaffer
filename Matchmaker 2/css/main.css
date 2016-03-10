@@ -21,7 +21,7 @@ body {
 }
 
 .page {
-	border: black solid 1px;
+	/* border: black solid 1px; */
 	margin: auto;
 	padding: 5px;
 	width: 960px;
@@ -136,7 +136,6 @@ header {
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 
-
 	.Button-primary {
 		background: #ED4740;
 		font-family: 'Oswald', sans-serif;
@@ -147,6 +146,12 @@ header {
 		border-radius: 5px;
 		border-bottom: solid 3px #C73A34;
 	}
+
+	.Hero-box a:hover {
+		color: #F9D735;
+	}
+
+
 /* -----------------------------------*/
 /* CONTENT
 /* -----------------------------------*/
@@ -160,9 +165,9 @@ section {
 	margin: 20px 0;
 }
 
-content section:first-child {
-	border-left: 0;
-}
+	content section:first-child {
+		border-left: 0;
+	}
 
 	.Button-secondary {
 		background: #D6E1DC;
@@ -172,6 +177,10 @@ content section:first-child {
 		padding: 10px;
 		border-radius: 5px;
 		border-bottom: solid 3px #B8BFBC;
+	}
+
+	section a {
+		color: black;
 	}
 
 /* -----------------------------------*/
