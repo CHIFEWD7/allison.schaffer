@@ -1,0 +1,50 @@
+html {
+	font-size: 16px;
+}
+
+
+body {
+	background-color: #e6e2d7;
+}
+
+.page {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.hero-logo {
+	padding: 100px 20px 20px 20px;
+	height: 600px;
+
+}
+
+.hero-logo p {
+	margin: 0;
+	z-index: .5;
+	font-size: .8rem;
+}
+
+.hero-logo img {
+	position: relative;
+	display: block;
+	margin: auto;
+	max-width: 80%;
+}
+
+.top-quote, .bottom-quote {
+	display: inline-block;
+	position: absolute;
+}
+
+.top-quote {
+	top: 15%;
+	left: 30%;
+}
+
+.bottom-quote {
+	top: 45%;
+	left: 12%;
+	text-align: right;
+
+}
+
