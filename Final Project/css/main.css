@@ -10,6 +10,9 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Lora', serif;
+
 html {
     color: #222;
     font-size: 1em;
@@ -104,9 +107,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
- @font-face { font-family: HelveticaNeue; src: url('../fonts/HelveticaNeue.ttf'); } 
- @font-face { font-family: HelveticaNeue; font-weight: bold; src: url('../fonts/HelveticaNeueBold.ttf');}
-
 
 html {
     font-size: 16px;
@@ -122,9 +122,17 @@ body {
 }
 
 h2 {
-    font-family: HelveticaNeueBold, sans-serif; 
+    font-family: 'Open Sans Condensed', sans-serif; 
     text-transform: uppercase;
     font-size: 2rem;
+}
+
+h1, h3 {
+        font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+p {
+    font-family: 'Lora', serif;
 }
 
 /*======================
@@ -184,9 +192,11 @@ nav ul {
 nav ul li {
     display: inline-block;
     padding: 5px;
-    font-size: .8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     color: #34495E;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
 }
 
 nav ul li:last-child {
@@ -259,7 +269,6 @@ nav ul li:last-child {
     margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
-    /*background: #FFF5EE; */
     background: #5D6D7E;
 }
 
@@ -270,13 +279,13 @@ nav ul li:last-child {
 .homepage-contestants-header {
     width: 600px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .homepage-contestants h2 {
     margin: 0px;
     padding-top: 30px;
     text-align: center;
-    font-family: HelveticaNeue;
     font-size: 2rem;
 }
 
@@ -288,7 +297,7 @@ nav ul li:last-child {
     margin-bottom: 10px;
 }
 
-.contestant-photo {
+.contestant {
     display: inline-block;
     float: left;
     width: 225px;
@@ -299,236 +308,79 @@ nav ul li:last-child {
     padding-bottom: 20px;
 }
 
-.contestant-dropdown-1 {
+.homepage-contestants h3 {
+    margin: 10px 0 0 40px;
+    font-size: 2rem;
+}
+
+.homepage-contestants p {
+    margin: 5px 0 0 40px;
+}
+
+.contestant-dropdown {
     height: 300px;
     width: 100%;
     background-color: #ffad86;
-    margin-top: -22px;
+    margin-top: -25px;
     display: none;
 }
 
-/*====================
-    Contestant Bios
-    =================*/
+.js-contestant-bio {
+    width: 903px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    display: none;
+}
 
-        .amanda-bio {
-            width: 75%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 10px;
-            display: none;
-        }
-        .amber-bio {
-            width: 75%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 10px;
-            border: 1px solid black;
-            display: none;
-        }
-        .becca-bio {
-            width: 75%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 10px;
-            border: 1px solid black;
-            display: none;
-        }
-        .breanne-bio {
-            width: 75%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 10px;
-            border: 1px solid black;
-            display: none;
-        }
-
-
-        .caila-bio {
-            width: 75%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 10px;
-            border: 1px solid black;
-            display: none;
-        }
-        .emily-bio {
-            width: 75%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 10px;
-            border: 1px solid black;
-            display: none;
-        }
-        .haley-bio {
-            width: 75%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 10px;
-            border: 1px solid black;
-            display: none;
-        }
-        .izzy-bio {
-            width: 75%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 10px;
-            border: 1px solid black;
-            display: none;
-        }
-
-
+.contestant-row img {
+    width: 215px;
+    margin: 5px;
+    border: 10px solid #FCF3CF;
+}
 
 /*====================
-     Contestants
+     Homepage Rules
     =================*/
-
-        #amanda {
-            width: 215px;
-            margin: 5px;
-            border: 10px solid #FCF3CF;
-        }
-        #amber {
-            width: 215px;
-            margin: 5px;
-            border: 10px solid #FCF3CF;
-        }
-        #becca {
-            width: 215px;
-            margin: 5px;
-            border: 10px solid #FCF3CF;
-        }
-        #breanne {
-            width: 215px;
-            margin: 5px;
-            border: 10px solid #FCF3CF;
-        }
-        #caila {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #FCF3CF;
-        }
-        #emily {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #FCF3CF;
-        }
-        #haley {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #FCF3CF;
-        }
-        #izzy {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #FCF3CF;
-        }
-        #jackie {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #FCF3CF;
-        }
-        #jami {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #FCF3CF;
-        }
-        #jennifer {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #FCF3CF;
-        }
-        #jessica {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #FCF3CF;
-        }
-        #jojo {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #jubilee {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #lace {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #laura {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #lb {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #laurenb {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #laurenh {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #laurenr {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #leah {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #maegan {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #mandi {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #olivia {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #rachel {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #samantha {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #shushanna {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-        #tiara {
-            width: 215px;
-            margin: 5px;
-            border: 5px solid #663333;
-        }
-
 
 .homepage-rules {
+    position: relative;
+    top: 60px;
     padding-top: 60px;
-    background-color: #D6DBDF;
+    background-color: #EAECEE;
+    height: 600px;
 }
+
+.homepage-rules h2 {
+    text-align: center;
+    color: #34495E;
+}
+
+.rules-container {
+    border: 1px solid black;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*====================
+     Footer
+    =================*/
+
+.footer {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 60px;
+    background: #D6DBDF;
+}
+
+.footer p {
+    margin-left: 20px;
+    padding: 25px;
+    font-size: .8rem;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -611,8 +463,16 @@ nav ul li:last-child {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media screen and (max-width: 960px) {
     /* Style adjustments for viewports that meet the condition */
+    .
+
+}
+
+@media screen and (max-width: 720px) {
+    /* Style adjustments for viewports that meet the condition */
+
+
 }
 
 @media print,
