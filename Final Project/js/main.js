@@ -1,15 +1,43 @@
-var nb = $(".nav-bar");
+$(document).ready(function() {
+  function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('.hero').css('height', windowHeight);
+  };
+  setHeight();
+  
+  $(window).resize(function() {
+    setHeight();
+  });
+});
 
-$(window).scroll(function() {
 
-	if( $(this).scrollTop() > 670) {
-		nb.addClass("navbar-scrolled");
-	}
-	else {
-		nb.removeClass("navbar-scrolled");
-	}
 
-})
+// $(document).ready(function() {
+//   function scrollToAnchor(aid){
+//     var aTag = $("a[name='"+ aid +"']");
+//     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+//   }
+//   $("a").click(function() {
+//     var href = $(this).attr('href').replace('#', '')
+//     scrollToAnchor(href);
+//   });     
+// });
+
+
+// var nb = $(".nav-bar");
+
+// var height = $(".hero").height()
+
+// $(window).scroll(function() {
+
+// 	if( $(this).scrollTop() > height) {
+// 		nb.addClass("navbar-scrolled");
+// 	}
+// 	else {
+// 		nb.removeClass("navbar-scrolled");
+// 	}
+
+// })
 
 
 $(".contestant").on("click", function(){
@@ -18,6 +46,7 @@ $(".contestant").on("click", function(){
 	$(thisDropdown).show().html(thisBio);
 	$(thisDropdown).addClass("slideDownHeight");
 });
+
 
 
 // $(window).scroll(function(){

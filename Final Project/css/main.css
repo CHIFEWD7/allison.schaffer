@@ -135,14 +135,24 @@ p {
     font-family: 'Lora', serif;
 }
 
+a {
+    text-decoration: none;
+    color: #34495E;
+}
+
+a:hover {
+    color: #5D6D7E;
+}    
+
+
 /*======================
     Hero
     ==================*/
 
 .hero {
     padding: 150px 20px 0px 20px;
-    height: 670px;
-    background-color: #D6DBDF;
+/*    height: 670px;
+*/    background-color: #D6DBDF;
 }
 
 .hero p {
@@ -171,12 +181,22 @@ p {
     width: 100%;
     position: fixed;
     top: 0;
+    height: 60px;
+    background-color: #FCF3CF;
+    margin-bottom: -60px;
     box-shadow: 0 2px 3px rgba(0,0,0, .4);
 }
 
 .nav-bar img {
     display: inline-block;
     float: left;
+}
+
+.navbar-scrolled img {
+    display: inline-block;
+    float: left;
+    max-height: 80%;
+    padding: 10px 0 0 10px;
 }
 
 nav {
@@ -215,11 +235,10 @@ nav ul li:last-child {
     =================*/
 
 .homepage-rules {
-    position: relative;
-    top: 60px;
+/*    position: relative;
+    top: 60px;*/
     padding-top: 60px;
     background-color: #EAECEE;
-    height: 600px;
 }
 
 .homepage-rules h2 {
@@ -227,10 +246,227 @@ nav ul li:last-child {
     color: #34495E;
 }
 
+.homepage-rules p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #34495E;
+    margin: 15px 0;
+    line-height: 1.1;
+}
+
+.homepage-rules h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #34495E;
+    margin: 15px 0;
+    line-height: 1.1;
+}
+
 .rules-container {
-    border: 1px solid black;
     width: 800px;
     margin: 0 auto;
+}
+
+.divider {
+    margin: 0 auto;
+    width: 800px;
+    height: 30px;
+    background-color: #F26768;
+}
+
+.columns-container {
+    margin-bottom: 75px;
+}
+
+.words-column {
+    width: 33%;
+    display: inline-block;
+    float: left;
+    margin-right: 4px;
+}
+
+.words-column p {
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 0 10px 0 10px;
+    margin: 10px 0;
+}
+
+.actions-column {
+    width: 33%;'
+    display: inline-block;
+    float: left;
+    margin-right: 4px;
+}
+
+.actions-column p {
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 0 10px 0 10px;
+    margin: 10px 0;
+}
+
+.roses-column {
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.roses-column p {
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 0 10px 0 10px;
+    margin: 10px 0;
+}
+
+.scores-header {
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    background-color: #FADBD8;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #34495E;
+}
+
+.actions-column .scores-header {
+    background-color: #f5b7b1;
+}
+
+.roses-column .scores-header {
+    background-color: #f1948a;
+}
+
+.five-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ebf5fb;
+}
+
+.ten-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #d6eaf8;
+}
+
+.fifteen-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #aed6f1;
+}
+
+.twenty-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #85c1e9;
+}
+
+.twentyfive-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #5dade2;
+}
+
+.thirty-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #3498db;
+}
+
+.fifty-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #2e86c1;
+}
+
+.seventyfive-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #2874a6;
+}
+
+.hundred-points-header {
+    color: #34495E;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #21618c;
 }
 
 /*====================
@@ -278,6 +514,15 @@ nav ul li:last-child {
     color: #EBEDEF;
 }
 
+.homepage-about p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.homepage-about h2 {
+    margin: 0 0 10px 0;
+}
 
 
 /*====================
@@ -592,8 +837,8 @@ input[type=text]:focus {
     =================*/
 
 .footer {
-    position: relative;
-    top: 60px;
+/*    position: relative;
+    top: 60px;*/
     width: 100%;
     height: 60px;
     background: #D6DBDF;
