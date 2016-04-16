@@ -3,7 +3,6 @@ var nb = $(".nav-bar");
 $(window).scroll(function() {
 
 	if( $(this).scrollTop() > 670) {
-		console.log(scroll)
 		nb.addClass("navbar-scrolled");
 	}
 	else {
@@ -13,138 +12,13 @@ $(window).scroll(function() {
 })
 
 
-
-
-// $("#amanda").on('click', function(){
-// 	$(".contestant-dropdown-1").toggle();
-// 	$(".amanda-bio").toggle();
-// })
-
-// $("#amber").on('click', function(){
-// 	$(".contestant-dropdown-1").toggle();
-// 	$(".amber-bio").toggle();
-// })
-
-// $("#becca").on('click', function(){
-// 	$(".contestant-dropdown-1").toggle();
-// 	$(".becca-bio").toggle();
-// })
-
-// $("#breanne").on('click', function(){
-// 	$(".contestant-dropdown-1").toggle();
-// 	$(".breanne-bio").toggle();
-// })
-
-
-// $("#caila").on('click', function(){
-// 	$(".contestant-dropdown-2").toggle();
-// 	$(".caila-bio").toggle();
-// })
-// $("#emily").on('click', function(){
-// 	$(".contestant-dropdown-2").toggle();
-// 	$(".emily-bio").toggle();
-// })
-// $("#haley").on('click', function(){
-// 	$(".contestant-dropdown-2").toggle();
-// 	$(".haley-bio").toggle();
-// })
-// $("#izzy").on('click', function(){
-// 	$(".contestant-dropdown-2").toggle();
-// 	$(".izzy-bio").toggle();
-// })
-
-// $("#jackie").on('click', function(){
-// 	$(".contestant-dropdown-3").toggle();
-// 	$(".jackie-bio").toggle();
-// })
-// $("#jami").on('click', function(){
-// 	$(".contestant-dropdown-3").toggle();
-// 	$(".jami-bio").toggle();
-// })
-// $("#jennifer").on('click', function(){
-// 	$(".contestant-dropdown-3").toggle();
-// 	$(".jennifer-bio").toggle();
-// })
-// $("#jessica").on('click', function(){
-// 	$(".contestant-dropdown-3").toggle();
-// 	$(".jessica-bio").toggle();
-// })
-
-// $("#jojo").on('click', function(){
-// 	$(".contestant-dropdown-4").toggle();
-// 	$(".jojo-bio").toggle();
-// })
-// $("#jubilee").on('click', function(){
-// 	$(".contestant-dropdown-4").toggle();
-// 	$(".jubilee-bio").toggle();
-// })
-// $("#lace").on('click', function(){
-// 	$(".contestant-dropdown-4").toggle();
-// 	$(".lace-bio").toggle();
-// })
-// $("#laura").on('click', function(){
-// 	$(".contestant-dropdown-4").toggle();
-// 	$(".laura-bio").toggle();
-// })
-
-// $("#lb").on('click', function(){
-// 	$(".contestant-dropdown-5").toggle();
-// 	$(".lb-bio").toggle();
-// })
-// $("#laurenb").on('click', function(){
-// 	$(".contestant-dropdown-5").toggle();
-// 	$(".laurenb-bio").toggle();
-// })
-// $("#laurenh").on('click', function(){
-// 	$(".contestant-dropdown-5").toggle();
-// 	$(".laurenh-bio").toggle();
-// })
-// $("#laurenr").on('click', function(){
-// 	$(".contestant-dropdown-5").toggle();
-// 	$(".laurenr-bio").toggle();
-// })
-
-// $("#leah").on('click', function(){
-// 	$(".contestant-dropdown-6").toggle();
-// 	$(".leah-bio").toggle();
-// })
-// $("#maegan").on('click', function(){
-// 	$(".contestant-dropdown-6").toggle();
-// 	$(".maegan-bio").toggle();
-// })
-// $("#mandi").on('click', function(){
-// 	$(".contestant-dropdown-6").toggle();
-// 	$(".mandi-bio").toggle();
-// })
-// $("#olivia").on('click', function(){
-// 	$(".contestant-dropdown-6").toggle();
-// 	$(".olivia-bio").toggle();
-// })
-
-// $("#rachel").on('click', function(){
-// 	$(".contestant-dropdown-7").toggle();
-// 	$(".rachel-bio").toggle();
-// })
-// $("#samantha").on('click', function(){
-// 	$(".contestant-dropdown-7").toggle();
-// 	$(".samantha-bio").toggle();
-// })
-// $("#shushanna").on('click', function(){
-// 	$(".contestant-dropdown-7").toggle();
-// 	$(".shushanna-bio").toggle();
-// })
-// $("#tiara").on('click', function(){
-// 	$(".contestant-dropdown-7").toggle();
-// 	$(".tiara-bio").toggle();
-// })
-
-
 $(".contestant").on("click", function(){
 	var thisBio = $(this).find(".js-contestant-bio").html();
-	console.log(thisBio);
 	var thisDropdown = $(this).closest(".contestant-row").next(".contestant-dropdown");
 	$(thisDropdown).show().html(thisBio);
+	$(thisDropdown).addClass("slideDownHeight");
 });
+
 
 // $(window).scroll(function(){
 // 	console.log($(".js-contestant-dropdown").offset());
@@ -155,9 +29,38 @@ $(".contestant").on("click", function(){
 // });	
 
 var waypoint = new Waypoint({
-  element: document.getElementById('homepage-contestants'),
+  element: $('.homepage-about'),
   handler: function() {
-    notify('Basic waypoint triggered')
-  }
+    $('.js-contestant-dropdown').hide();
+  },
+  offset: -200
 })
 
+var waypoint = new Waypoint({
+  element: $('.footer'),
+  handler: function() {
+    $('.js-contestant-dropdown').hide();
+  },
+  offset: 'bottom-in-view'
+})
+
+
+ 
+$('input:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $("#girls").addClass("checked");
+        console.log ("label");
+    } else {
+        $('label').removeClass("checked");
+    }
+});
+
+
+
+var limit = 2;
+$('input.team-members').on('change', function(evt) {
+   if($(this).siblings(':checked').length >= limit) {
+       this.checked = false;
+   }
+   // console.log($('input.team-members').children());
+});
