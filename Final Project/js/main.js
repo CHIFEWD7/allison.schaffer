@@ -1,7 +1,13 @@
 $(document).ready(function() {
   function setHeight() {
     windowHeight = $(window).innerHeight();
-    $('.hero').css('height', windowHeight);
+    $('.hero-quote').css('top', windowHeight);
+    $('.homepage-rules').css('top', windowHeight);
+    $('.homepage-about').css('top', windowHeight);
+    $('.homepage-contestants').css('top', windowHeight);
+    $('.hero-quote').css('top', windowHeight);
+    $('.sign-up').css('top', windowHeight);
+    $('.footer').css('top', windowHeight);
   };
   setHeight();
   
@@ -24,20 +30,20 @@ $(document).ready(function() {
 // });
 
 
-// var nb = $(".nav-bar");
+var nb = $(".navbar");
 
-// var height = $(".hero").height()
+$(window).scroll(function() {
 
-// $(window).scroll(function() {
+	if( $(this).scrollTop() > 0) {
+		nb.addClass("navbar-scrolled");
+    $(".navbar img").show();
+	}
+	else {
+		nb.removeClass("navbar-scrolled");
+    $(".navbar img").hide();
+	}
 
-// 	if( $(this).scrollTop() > height) {
-// 		nb.addClass("navbar-scrolled");
-// 	}
-// 	else {
-// 		nb.removeClass("navbar-scrolled");
-// 	}
-
-// })
+})
 
 ////////* Contestant Bio Dropdown */////
 
@@ -123,6 +129,20 @@ $(".points-header").on("click", function() {
 });
 
 
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
 
 
 
