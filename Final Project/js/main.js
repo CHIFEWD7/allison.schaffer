@@ -39,6 +39,8 @@ $(document).ready(function() {
 
 // })
 
+////////* Contestant Bio Dropdown */////
+
 
 $(".contestant").on("click", function(){
 	var thisBio = $(this).find(".js-contestant-bio").html();
@@ -49,13 +51,8 @@ $(".contestant").on("click", function(){
 
 
 
-// $(window).scroll(function(){
-// 	console.log($(".js-contestant-dropdown").offset());
+////////* Contestant Bio Hiding */////
 
-// 	if($(window).scrollTop() > 400) {
-
-// 	}
-// });	
 
 var waypoint = new Waypoint({
   element: $('.homepage-about'),
@@ -74,22 +71,63 @@ var waypoint = new Waypoint({
 })
 
 
- 
-$('input:checkbox').change(function(){
-    if($(this).is(":checked")) {
-        $("#girls").addClass("checked");
-        console.log ("label");
-    } else {
-        $('label').removeClass("checked");
+// $(window).scroll(function(){
+//  console.log($(".js-contestant-dropdown").offset());
+
+//  if($(window).scrollTop() > 400) {
+
+//  }
+// });  
+
+
+
+////////* Checkboxes */////
+
+
+$("input[type='checkbox']").change(function(){
+    if($(this).is(":checked")){
+        $(this).parents("label").css("background-color", "#673434").css("color", "white").css("box-shadow", "inset 0px 0px 10px rgba(0,0,0,0.9)"); 
+    }else{
+        $(this).parents("label").css("background-color", "#D6DBDF").css("color", "#34495E").css("box-shadow", "none");  
     }
 });
 
 
 
-var limit = 2;
-$('input.team-members').on('change', function(evt) {
-   if($(this).siblings(':checked').length >= limit) {
-       this.checked = false;
-   }
-   // console.log($('input.team-members').children());
+// $(document).ready(function () {
+//    $("input[type='checkbox']").change(function () {
+//       var maxAllowed = 5;
+//       var cnt = $("input[type='checkbox']:checked").length;
+//       if (cnt >= maxAllowed)
+//       {
+//          $(this).prop("checked", "");
+//          alert('Select maximum ' + maxAllowed + ' contestants!');
+//      }
+//   });
+// });
+
+
+// var limit = 2;
+// $("input[type='checkbox']").on('change', function() {
+//    if($(this).each(':checked').length >= limit) {
+//        this.checked = false;
+//    };
+// });
+
+
+////////* Sliding Score Information */////
+
+$(".points-header").on("click", function() {
+    $(this).next("div").slideToggle("fast", function() {
+    });
 });
+
+
+
+
+
+
+
+
+
+
