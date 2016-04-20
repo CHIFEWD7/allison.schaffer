@@ -12,9 +12,9 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Lora:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
     </head>
@@ -27,7 +27,7 @@
 
     <div class="page">
         <div class="navbar">
-            <img src="img/rose.png" alt="Rose">
+            <img src="img/ringicon.png" alt="Ring Logo">
             <nav>
                 <ul>
                     <li><a href="#rules">Rules</a></li> | 
@@ -41,6 +41,10 @@
         </div>
         <div class="hero">
             <img src="img/bachelor-logo.png" alt="hero logo">
+<!--             <div class="triangle-box">
+                <p>SCROLL</p>
+                <div class="triangle"></div>
+            </div> -->
         </div>
         
         <div class="hero-quote">
@@ -51,14 +55,38 @@
         <div class="homepage-rules clearfix">
             <h2>Here's How It Works</h2>
             <div class="rules-container">
-                <div class="divider"></div>
-                <h3>First, gather your league! Wrangle a group of friends excited to turn their Bachelor habit into a competitive sport and get 'em signed up!</h3>
-                <p>Each member of your league gets to recruit 5 bachelorettes to their team. There are no restricitions - any team can have any contestant, regardless of the overlap. Read the girls bios, google their past, ask your mom's advice - Just no Reality Steve or any other tawdry gossip site trying to ruin the mystery and the fun.</p>
-                <div class="divider"></div>
+                <div class="steps-container clearfix">
+                    <div class="steps-row">
+                        <div class="number-circle">
+                            <h5>1</h5>
+                        </div>
+                        <p>First, gather your league! Wrangle a group of friends excited to turn their Bachelor habit into a competitive sport and get 'em signed up!</p>
+                    </div>
+                    <div class="steps-row">        
+                        <div class="number-circle">
+                            <h5>2</h5>
+                        </div>
+                        <p>Read the girl's bios, google their past, ask your mom's advice - do whatever it takes to choose the winning girls! (Just no Reality Steve or any other tawdry gossip site trying to ruin the mystery and the fun.)</p>
+                    </div>        
+                    <div class="steps-row">
+                        <div class="number-circle">
+                            <h5>3</h5>
+                        </div>
+                        <p>Select your 5 girls and name your team! There are no restricitions - any team can have any contestant, regardless of the overlap. Then sit back and get ready to watch the crap outta the season!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="points">
+            <div class="points-visible">        
                 <h2>And Here's How It's Scored</h2>
-                <div class="divider"></div>
+                <div class="icon">
+                <i class="fa fa-angle-down" style="size: 120%"></i>
+                </div>
+            </div>
+            <div class="points-hidden">
                 <div class="columns-container clearfix">
-                    <div class="words-column">
+                    <div class="points-column">
                         <div class="scores-header">Words</div>
                         <div class="points-header five">5 Points</div>
                             <div class="scoring-items">
@@ -107,7 +135,7 @@
                                 <p>none</p>
                             </div>
                     </div>
-                    <div class="actions-column">
+                    <div class="points-column">
                         <div class="scores-header">Actions</div>
                         <div class="points-header five">5 Points</div>
                             <div class="scoring-items">
@@ -163,7 +191,7 @@
                                 <p>none</p>
                             </div>
                     </div>
-                    <div class="roses-column">
+                    <div class="points-column">
                         <div class="scores-header">Roses</div>
                         <div class="points-header five">5 Points</div>
                             <div class="no-items">
@@ -204,9 +232,10 @@
                                 <p>gets the final rose</p>
                             </div>
                     </div> 
-                </div>                   
-            </div>
+                </div>   
+            </div>                    
         </div>
+
         <a name="about"></a> 
         <div class="homepage-about clearfix">
             <div class="homepage-about-container clearfix">
@@ -229,7 +258,7 @@
                     <img id="amanda" src="img/amanda.jpg" alt="Amanda">
                     <div class="js-contestant-bio">
                         <h3>Amanda</h3>
-                        <p><strong>Age:</strong> 25  <strong>Occupation:</strong> Esthetician  <strong>Height:</strong> 5’3”<strong>Hometown:</strong> Rancho Santa Margarita, CA <strong>Tattoos:</strong> None</p>
+                        <p><strong>Age:</strong> 25  <strong>Occupation:</strong> Esthetician  <strong>Height:</strong> 5’3”  <strong>Hometown:</strong> Rancho Santa Margarita, CA  <strong>Tattoos:</strong> None</p>
                         <p><strong>All-Time Favorite Movies:</strong> Grease, Bridesmaids, and The Notebook, of course</p>
                         <p><strong>What is the most outrageous thing you have ever done?</strong> I hiked 12 miles to a waterfall in Kauai during a thunderstorm.</p>
                         <p><strong>What is your greatest achievement to date?</strong> My two daughters. They’re the most amazing little humans. I am amazed by them every day.</p>
@@ -241,7 +270,7 @@
                     <img id="amber" src="img/amber.jpg" alt="Amber">
                     <div class="js-contestant-bio">
                         <h3>Amber</h3>
-                        <p><strong>Age:</strong> 30 <strong>Occupation:</strong> Bartender <strong>Hometown:</strong> Chicago, IL <strong>Height:</strong> 5'3" <strong>Tattoos:</strong> None</p>
+                        <p><strong>Age:</strong> 30  <strong>Occupation:</strong> Bartender  <strong>Hometown:</strong> Chicago, IL  <strong>Height:</strong> 5'3"  <strong>Tattoos:</strong> None</p>
                         <p><strong>Can't live without:</strong> Teddy bear, Mom, best friends, brother</p>
                         <p><strong>If you could be someone else for just one day, who would it be?</strong> A zookeeper. I would love to be around the different animals and watch how they live.</p>
                         <p><strong>If you won the lottery, what would you do with your winnings?</strong> Travel -- there is so much to see in this world. Also so many families in different countries that can use help.</p>
@@ -253,7 +282,7 @@
                     <img id="becca" src="img/becca.jpg" alt="Becca">
                     <div class="js-contestant-bio">
                         <h3>Becca</h3>
-                        <p><strong>Age:</strong> 26 <strong>Occupation:</strong> Chiropractic Assistant <strong>Hometown:</strong> San Diego, CA <strong>Height:</strong> 5'5" <strong>Tattoos:</strong> Two</p>
+                        <p><strong>Age:</strong> 26  <strong>Occupation:</strong> Chiropractic Assistant  <strong>Hometown:</strong> San Diego, CA  <strong>Height:</strong> 5'5"  <strong>Tattoos:</strong> Two</p>
                         <p><strong>Biggest date fear:</strong> Having stomach issues and clogging up a toilet, a la Dumb and Dumber</p>
                         <p><strong>If you could be any animal, what would you be?</strong> A dolphin. They're beautiful and supposedly use 20% of their brains -- brilliant!</p>
                         <p><strong>What's your most embarrassing moment?</strong> I have several -- once I was getting gas and the guy asked, "What kind of gas do you like?" and I thought he asked "What kind of guys do you like?" I responded, "Tall, dark, and handsome." He just stared at me and repeated the question.</p>
@@ -264,7 +293,7 @@
                     <img id="breanne" src="img/breanne.jpg" alt="Breanne">
                     <div class="js-contestant-bio">
                         <h3>Breanne</h3>
-                        <p><strong>Age:</strong> 30 <strong>Occupation:</strong> Nutritional Therapist <strong>Hometown:</strong> Seattle, WA <strong>Height:</strong> 5’7” <strong>Tattoos:</strong> None</p>
+                        <p><strong>Age:</strong> 30  <strong>Occupation:</strong> Nutritional Therapist  <strong>Hometown:</strong> Seattle, WA  <strong>Height:</strong> 5’7”  <strong>Tattoos:</strong> None</p>
                         <p><strong>Favorite Music:</strong> Lana Del Rey, Lady Gaga, Beyonce – they are incredible women who love themselves and are confident to share their gifts with the world!</p>
                         <p><strong>All-Time Favorite Movies:</strong> That Thing You Do!, Anchorman, Notting Hill</p>
                         <p><strong>What is the best trip you have ever been on and why?</strong> New York for my 30th birthday. I went all by myself, went to Fashion Week, and went to some amazing events. I made the best connections of my life there and still keep in contact.</p>
@@ -275,7 +304,7 @@
                     <img src="img/caila.jpg" alt="Caila">
                     <div class="js-contestant-bio">
                         <h3>Caila</h3>
-                        <p><strong>Age:</strong> 24 <strong>Occupation:</strong> Software Sales Rep. <strong>Hometown:</strong> Hudson, OH <strong>Height:</strong> 5’4”</p>
+                        <p><strong>Age:</strong> 24  <strong>Occupation:</strong> Software Sales Rep.  <strong>Hometown:</strong> Hudson, OH  <strong>Height:</strong> 5’4”</p>
                         <p><strong>Tattoos:</strong> Yes, just one on my right hip. It is a half-inch tattoo of the Hawaiian islands.</p>
                         <p><strong>What is your cultural background, and how important is it to you?</strong> I am half Filipino and half German/Irish/Swiss. It is important to me to be open to trying new things and I would hope to share some traditions.</p>
                         <p><strong>I hate it when my date…</strong> Curses… picks their nose/overly wipes their nose… breathes heavily… is too protective too soon….gets so cheesy that it seems fake, like, “Here is a leaf on a bush we passed on our first date because I’m a romantic guy.”</p>
@@ -286,7 +315,7 @@
                     <img id="emily" src="img/emily.jpg" alt="Emily">
                     <div class="js-contestant-bio">
                         <h3>Emily</h3>
-                        <p><strong>Age:</strong> 22 <strong>Occupation:</strong> Twin <strong>Hometown:</strong> Las Vegas, NV <strong>Height:</strong> 5’4 <strong>Tattoos:</strong> None</p>
+                        <p><strong>Age:</strong> 22  <strong>Occupation:</strong> Twin  <strong>Hometown:</strong> Las Vegas, NV  <strong>Height:</strong> 5’4  <strong>Tattoos:</strong> None</p>
                         <p><strong>What are the top 3 things on your bucket list?</strong>1. To be in New York on New Year’s Eve to watch the ball drop and see all the people! 2. Travel to unique places out of the country and do crazy things like bungee jump, zip line, and adventure around and make unforgettable memories. 3. Go to Six Flags and ride every single ride!</p>
                         <p><strong>What’s your most embarrassing moment?</strong> Peeing my pants in front of my whole high school cheer team from laughing so hard!</p>
                         <p><strong>Describe your idea of the ultimate date.</strong> The ultimate date for me would be something simple. Like laying somewhere looking at the stars and having great conversations and laughing.</p>
@@ -296,7 +325,7 @@
                     <img id="haley" src="img/haley.jpg" alt="Haley">
                     <div class="js-contestant-bio">
                         <h3>Haley</h3>
-                        <p><strong>Age:</strong> 22 <strong>Occupation:</strong> Twin <strong>Hometown:</strong> Las Vegas, NV <strong>Tattoos:</strong> None</p>
+                        <p><strong>Age:</strong> 22  <strong>Occupation:</strong> Twin  <strong>Hometown:</strong> Las Vegas, NV  <strong>Tattoos:</strong> None</p>
                         <p><strong>What’s the most outrageous thing you have ever done?</strong> Working in a nightclub! Only because I don’t drink or party.</p>
                         <p><strong>What does being married mean to you?</strong> Being married is a big deal to me. It’s protecting someone else’s heart the same way you would protect yours. It means being loyal and faithful.</p>
                         <p><strong>What is your greatest achievement to date?</strong> Making it to the semi-finals on Dallas Cowboys cheerleaders!</p>
@@ -312,7 +341,7 @@
                     <img id="izzy" src="img/izzy.jpg" alt="Izzy">
                     <div class="js-contestant-bio">
                         <h3>Izzy</h3>
-                        <p><strong>Age:</strong> 24 <strong>Occupation:</strong> Graphic Designer <strong>Hometown:</strong> Branford, CT <strong>Height:</strong> 5’6” <strong>Tattoos:</strong> None.</p>
+                        <p><strong>Age:</strong> 24  <strong>Occupation:</strong> Graphic Designer  <strong>Hometown:</strong> Branford, CT  <strong>Height:</strong> 5’6”  <strong>Tattoos:</strong> None.</p>
                         <p><strong>What is your favorite childhood memory?</strong> Family vacations. We always took a special trip once a year. One time we chartered a sailboat with a captain around the British Virgin Island for 10 days. We lived on the boat, ate, slept, showered, etc. It was an amazing experience. The Top 20 Beatles album will forever remind me of that trip.</p>
                         <p><strong>What is the most romantic present you have ever received and why?</strong> A journal with handwritten entries from every day of our vacation Europe together. It was cool to look back and read on the memories and how he was feeling each day.</p>
                         <p><strong>Where do you see yourself in 5 years?</strong> In five years, I see myself living in a city I have never lived, hopefully with a man I love dearly, with a job I enjoy – preferably my own graphic design studio designing wedding/event invitations. </p>
@@ -322,7 +351,7 @@
                     <img id="jackie" src="img/jackie.jpg" alt="Jackie">
                     <div class="js-contestant-bio">
                         <h3>Jackie</h3>
-                        <p><strong>Age:</strong> 23 <strong>Occupation:</strong> Gerontologist <strong>Hometown:</strong> San Francisco, CA <strong>Height:</strong> 5’9 <strong>Tattoos:</strong> None</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Gerontologist  <strong>Hometown:</strong> San Francisco, CA  <strong>Height:</strong> 5’9  <strong>Tattoos:</strong> None</p>
 
                         <p><strong>All-Time Favorite Movies:</strong> Seven Pounds, Elf, March of the Penguins</p>
 
@@ -337,7 +366,7 @@
                     <img id="jami" src="img/jami.jpg" alt="Jami">
                     <div class="js-contestant-bio">
                         <h3>Jami</h3>
-                        <p><strong>Age:</strong> 23 <strong>Occupation:</strong> Bartender <strong>Hometown:</strong> St. Albert, Alberta, Canada <strong>Height:</strong> 5'5" <strong>Tattoos:</strong> 3</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Bartender  <strong>Hometown:</strong> St. Albert, Alberta, Canada  <strong>Height:</strong> 5'5"  <strong>Tattoos:</strong> 3</p>
 
                         <p>W<strong>hat is your all-time favorite book and why?</strong> Arthur Miller’s The Crucible. It’s a play, but it taught me a lot about how much one action can affect so many people.</p>
 
@@ -350,7 +379,7 @@
                     <img id="jennifer" src="img/jennifer.jpg" alt="Jennifer">
                     <div class="js-contestant-bio">
                         <h3>Jennifer</h3>
-                        <p><strong>Age:</strong> 25 <strong>Occupation:</strong> Small Business Owner <strong>Hometown:</strong> Fort Lauderdale, FL <strong>Height:</strong> 5’7” <strong>Tattoos:</strong> None.</p>
+                        <p><strong>Age:</strong> 25  <strong>Occupation:</strong> Small Business Owner  <strong>Hometown:</strong> Fort Lauderdale, FL  <strong>Height:</strong> 5’7”  <strong>Tattoos:</strong> None.</p>
                         <p><strong>If you could be any animal, which one and why?</strong> Dolphin! They are beautiful, intelligent and are the only mammals to have sex for pleasure!</p>
 
                         <p><strong>Lunch with three people, alive or dead, and what would you order?</strong> Amy Schumer, Eckhart Tolle and Eric Decker :) I’d probably be too nervous to eat… I’ll have what they’re having!!!</p>
@@ -364,7 +393,7 @@
                     <img id="jessica" src="img/jessica.jpg" alt="Jessica">
                     <div class="js-contestant-bio">
                         <h3>Jessica</h3>
-                        <p><strong>Age:</strong> 23 <strong>Occupation:</strong> Accountant <strong>Hometown:</strong> Boca Raton, FL <strong>Height:</strong> 5’4” <strong>Tattoos:</strong> One</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
 
                         <p><strong>What is your greatest achievement to date?</strong> Passing all four parts of the CPA exam in six months</p>
 
@@ -379,14 +408,14 @@
                     <img id="jojo" src="img/jojo.jpg" alt="JoJo">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
                 <div class="contestant">
                     <img id="jubilee" src="img/jubilee.jpg" alt="Jubilee">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
             </div>
@@ -398,49 +427,49 @@
                     <img id="lace" src="img/lace.jpg" alt="lace">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div> 
                 <div class="contestant">
                     <img id="laura" src="img/laura.jpg" alt="Laura">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div> 
                 <div class="contestant">
                     <img id="lb" src="img/lb.jpg" alt="LB">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
                 <div class="contestant">
                     <img id="laurenb" src="img/laurenb.jpg" alt="Lauren B">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
                 <div class="contestant">
                     <img id="laurenh" src="img/laurenh.jpg" alt="Lauren H">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div> 
                 <div class="contestant">
                     <img id="laurenr" src="img/laurenr.jpg" alt="Lauren R">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
                 <div class="contestant">
                     <img id="leah" src="img/leah.jpg" alt="Leah">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
             </div>
@@ -452,49 +481,49 @@
                     <img id="maegan" src="img/maegan.jpg" alt="Maegan">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
                 <div class="contestant">
                     <img id="mandi" src="img/mandi.jpg" alt="Mandi">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div> 
                 <div class="contestant">
                     <img id="olivia" src="img/olivia.jpg" alt="Olivia">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
                 <div class="contestant">
                     <img id="rachel" src="img/rachel.jpg" alt="Rachel">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
                 <div class="contestant">
                     <img id="samantha" src="img/samantha.jpg" alt="Samantha">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>
                 <div class="contestant">
                     <img id="shushanna" src="img/shushanna.jpg" alt="Shushanna">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div> 
                 <div class="contestant">
                     <img id="tiara" src="img/tiara.jpg" alt="Tiara">
                     <div class="js-contestant-bio">
                         <h3>Name</h3>
-                        <p>Copy</p>
+                        <p><strong>Age:</strong> 23  <strong>Occupation:</strong> Accountant  <strong>Hometown:</strong> Boca Raton, FL  <strong>Height:</strong> 5’4”  <strong>Tattoos:</strong> One</p>
                     </div>
                 </div>     
             </div>
@@ -503,62 +532,65 @@
 
         </div>  
 
-
+        <div class="homepage-countdown">
+            <div id="countdown">
+                <p class="days">00</p>
+                <p class="timeRefDays">days</p>
+                <p class="hours">00</p>
+                <p class="timeRefHours">hours</p>
+                <p class="minutes">00</p>
+                <p class="timeRefMinutes">minutes</p>
+                <p class="seconds">00</p>
+                <p class="timeRefSeconds">seconds</p>
+            </div>
+        </div>
         
         <a name="sign-up"></a> 
         <div class="sign-up">
         <h2>Submit Your Team!</h2>
 
-            <form data-parsley-validate>
+            <form data-parsley-validate="">
                 <div class="cf">
-                  <div class="form-left-column">
-                        <div class="row">
-                          <label for="name">Name</label>
-                          <input class="name" name="name" placeholder="Name" type="text">
-                        </div>
-                  </div>
-                  <div class="form-right-column"> 
-                        <div class="row">
-                          <label for="email">E-mail</label>
-                          <input class="email" placeholder="E-mail" type="text">
-                        </div>
-                  </div>      
+                    <div class="form-left-column">
+                        <label for="name">Name</label>
+                        <input class="name" name="name" placeholder="Name" type="text" required="">                   
+                    </div>
+                    <div class="form-right-column"> 
+                        <label for="email">E-mail</label>
+                        <input class="email" placeholder="E-mail" type="text" required="">
+                    </div>      
                   <div class="contestants">
                         <div class="contestants-form clearfix">
-                            <label for="team-members">Select 5 Contestants for your team</label>
-                            <div class="contestants-column-one">
+                            <label for="team-members">Select <strong>five</strong> Contestants for your team</label>
+                            <div class="contestants-column">
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Amanda" data-parsley-maxcheck="5">Amanda</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Amber">Amber</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Becca">Becca</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Breanne">Breanne</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Caila">Caila</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Emily">Emily</label><br>
-                            </div>
-                            <div class="contestants-column-two">
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Haley">Haley</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Izzy">Izzy</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Jackie">Jackie</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Jami">Jami</label><br>
+                            </div>
+                            <div class="contestants-column">
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Jennifer">Jennifer</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Jessica">Jessica</label><br>
-                            </div>    
-                            <div class="contestants-column-two">
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="JoJo">JoJo</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Jubilee">Jubilee</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Lace">Lace</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Laura">Laura</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Lb">Lb</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="LaurenB">Lauren B</label><br>
-                            </div>
-                            <div class="contestants-column-two">
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="LaurenH">Lauren H</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="LaurenR">Lauren R</label><br>
+                            </div>
+                            <div class="contestants-column">
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Leah">Leah</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Maegan">Maegan</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Mandi">Mandi</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Olivia">Olivia</label><br>
-                            </div>
-                            <div class="contestants-column-two">
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Rachel">Rachel</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Samantha">Samantha</label><br>
                                 <label><input type="checkbox" name="team-members[]" class="team-members" value="Shushanna">Shushanna</label><br>
